@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 li {
    list-style-type:none;  
 }
   
 .divItems {
    display: flex;
+=======
+li {
+   list-style-type:none;  
+}
+  
+.divItems {
+   display: flex;
+>>>>>>> 850d0484639a444fba5abeb9d8f977ad4446637a
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
    display: flex;
 }
@@ -9,4 +10,17 @@ div div {
    padding: 5px;
    text-align: center;
 }
+=======
+div {
+   display: flex;
+}
+  
+div div {
+   flex-direction: column;
+   margin: 5px;
+   border: 2px solid black;
+   padding: 5px;
+   text-align: center;
+}
+>>>>>>> 850d0484639a444fba5abeb9d8f977ad4446637a
   
