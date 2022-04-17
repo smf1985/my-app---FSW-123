@@ -1,26 +1,18 @@
-<<<<<<< HEAD
-function ToDoList(props){
-    return(
-      props.text.map((todos, index) => {
-        return(
-        
-        <li key = {index}>
-        <input type="checkbox"></input>{todos.text}</li>)
-      })
+import './App.css'
+
+function ToDoList({items}) {
+    return (
+        <>
+            <h1>List of Todos</h1>
+            <ul>
+                {items.map((item, index) => (
+                    <div className = "divItems">
+                        <input type="checkbox"/><li key={index}>{item.text}</li>
+                    </div>
+                ))}
+            </ul>
+        </>
     );
 }
 
-=======
-function ToDoList(props){
-    return(
-      props.text.map((todos, index) => {
-        return(
-        
-        <li key = {index}>
-        <input type="checkbox"></input>{todos.text}</li>)
-      })
-    );
-}
-
->>>>>>> 850d0484639a444fba5abeb9d8f977ad4446637a
 export default ToDoList;
