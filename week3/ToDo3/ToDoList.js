@@ -1,4 +1,4 @@
-import Todo from './Todo.js';
+import Todo from './ToDo.js';
 
 function ToDoList({todos, completeTodo, deleteTodo}) {
 

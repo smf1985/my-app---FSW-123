@@ -1,14 +1,38 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faDiceOne, faDiceTwo, faDiceThree, faDiceFour, faDiceFive, faDiceSix, faDice} from '@fortawesome/free-solid-svg-icons';
+import image1 from "./diceRoll1.png"
+import image2 from "./diceRoll2.png"
+import image3 from "./diceRoll3.png"
+import image4 from "./diceRoll4.png"
+import image5 from "./diceRoll5.png"
+import image6 from "./diceRoll6.png"
 
-function Dice({value}) {
-    if (value === 1) return <FontAwesomeIcon icon ={faDiceOne} />
-    else if (value === 2) return <FontAwesomeIcon icon ={faDiceTwo} />
-    else if (value === 3) return <FontAwesomeIcon icon ={faDiceThree} />
-    else if (value === 4) return <FontAwesomeIcon icon ={faDiceFour} />
-    else if (value === 5) return <FontAwesomeIcon icon ={faDiceFive} />
-    else if (value === 6) return <FontAwesomeIcon icon ={faDiceSix} />
-    else return <FontAwesomeIcon icon ={faDice} />
+function Dice({dice}) {
+    let pic;
+    switch (dice) {
+        case 1:
+            pic = image1;
+            break;
+        case 2:
+            pic = image2;
+            break;
+        case 3:
+            pic = image3;
+            break;
+        case 4:
+            pic = image4;
+            break;
+        case 5:
+            pic = image5;
+            break;
+
+        case 6:
+            pic = image6;
+            break;
+        default:
+            break;
+    }
+    return (	
+        <img width="200" height="200" src={pic} alt="dice"/>
+    )
 }
 
 export default Dice;
