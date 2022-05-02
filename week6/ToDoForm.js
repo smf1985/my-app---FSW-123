@@ -1,13 +1,13 @@
 import {useState} from 'react';
 
-function ToDoForm({addToDo}) {
+function TodoForm({addTodo}) {
 
     const [userInput, setUserInput] = useState("");
 
     const validateForm = (e) => {
         e.preventDefault();
         if (userInput !== "") {
-            addToDo(userInput);
+            addTodo(userInput);
         } 
     }
 
@@ -17,11 +17,11 @@ function ToDoForm({addToDo}) {
 
     return (
         <form id="todoForm" onSubmit={validateForm}>
-            <label>Add a To Do Here: </label>
+            <label>Add a Todo Here: </label>
             <input id="todoText" name="todoText" placeholder="todo item..." onChange ={changeState} required></input>
             <button>Add Me!</button>
         </form>
     );
 }
 
-export default ToDoForm;
+export default TodoForm;

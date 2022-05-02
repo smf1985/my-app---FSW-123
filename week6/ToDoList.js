@@ -1,12 +1,12 @@
-import ToDo from './ToDo.js';
+import Todo from './Todo.js';
 
-function ToDoList({toDos, completeToDo, deleteToDo, editToDo}) {
+function ToDoList({todos, completeTodo, deleteTodo, editTodo}) {
 
-    const toDoList = toDos.map((toDo) => {return <ToDo toDo ={toDo} key ={toDo.id} completeToDo ={completeToDo} deleteToDo ={deleteToDo} editToDo ={editToDo}/>});
+    const todoList = todos.map((todo) => {return <Todo todo ={todo} key ={todo.id} completeTodo ={completeTodo} deleteTodo ={deleteTodo} editTodo ={editTodo}/>});
     return (
         <ul>
             <div className="divItems">
-                {toDoList}
+                {todoList}
             </div>
         </ul>
     );

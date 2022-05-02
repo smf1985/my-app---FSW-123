@@ -1,13 +1,13 @@
 import {useState} from 'react';
 
-function EditToDoForm({toDo, addToDo, id, cancelBtn, editToDo}) {
+function EditTodoForm({todo, addTodo, id, cancelBtn, editTodo}) {
 
-    const [userInput, setUserInput] = useState(toDo.text);
+    const [userInput, setUserInput] = useState(todo.text);
 
     const validateForm = (e) => {
         e.preventDefault();
         if (userInput !== "") {
-            editToDo(toDo, userInput);
+            editTodo(todo, userInput);
         } 
 
         const cancel = cancelBtn;
@@ -28,4 +28,4 @@ function EditToDoForm({toDo, addToDo, id, cancelBtn, editToDo}) {
     );
 }
 
-export default EditToDoForm;
+export default EditTodoForm;

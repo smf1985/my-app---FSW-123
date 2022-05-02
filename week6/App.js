@@ -3,7 +3,7 @@ import ToDoList from './ToDoList.js';
 import {listOfTodos} from './STORE.js';
 import {useState} from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import TodoForm from './ToDoForm.js';
+import TodoForm from './TodoForm.js';
 
 function App() {
   const [todos, setTodos] = useState(listOfTodos);  
