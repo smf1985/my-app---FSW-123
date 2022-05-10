@@ -13,7 +13,7 @@ function Todo({ todo, comp, del, edit }) {
 
     const onSubmitEdit = (e) => {
         if (input == ''){
-            alert('Todo can not be empty!')
+            alert('To-Do can not be empty!')
         } else {
             e.preventDefault();
             edit(input, todo.id);
